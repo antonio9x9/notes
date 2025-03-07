@@ -1,0 +1,45 @@
+.container{    
+    background-color: rgb(32, 33, 36);
+    
+    display: grid;
+    grid-template-columns: 15vw 85vw;
+    grid-template-rows: 3.5vw 96.5vw;
+}
+
+.sidebar{
+    background-color: red;
+ 
+    /* v1 */
+    /* grid-row-start: 1;
+    grid-row-end: 1;
+    
+    grid-column-start: 1;
+    grid-column-end: 2; */
+    
+    /* v2 */
+    /* grid-row: 1 / 1;
+    grid-column: 1 / 2; */
+
+    grid-row: span 1;
+    grid-column: span 1;
+}    
+
+.topPanel{
+    background-color: blue;    
+    
+    grid-row: span 1;
+    grid-column: span 2;
+}
+
+.header{
+    display: flex;
+    justify-content: space-around;
+    background-color: aquamarine;
+}
+
+.centerPanel{
+    background-color: green;    
+    
+    grid-row: span 2;
+    grid-column: span 1;
+}

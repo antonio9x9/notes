@@ -1,15 +1,19 @@
-import React from 'react';
+import React from "react";
 import ReactDOM from 'react-dom/client';
+import { BrowserRouter, Routes, Route } from "react-router";
+
+import MainPage from './pages/mainPage/MainPage';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
+
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <BrowserRouter >
+    <Routes>
+      <Route path="/" element={<MainPage />} />
+    </Routes>
+  </BrowserRouter >
 );
 
